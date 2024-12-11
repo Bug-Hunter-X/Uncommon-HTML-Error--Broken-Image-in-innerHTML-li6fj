@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to access innerHTML
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p>" + "<img src='broken-image.jpg' alt='Broken Image'>";
+  </script>
+</body>
+</html>
